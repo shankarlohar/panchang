@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "panchang"
+version = "0.0.0"
+description = "A python package that follows traditional units of Hindu timekeeping."
+authors = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
+readme = "README.md"
+
+
+repository = "https://github.com/shankarlohar/panchang"
+
+
+keywords = ["panchang", "hindu time"]
+
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
