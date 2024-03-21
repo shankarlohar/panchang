@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "panchang"
-version = "0.0.0"
+version = "0.0.dev0"
 description = "A python package that follows traditional units of Hindu timekeeping."
 authors = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
 readme = "README.md"
