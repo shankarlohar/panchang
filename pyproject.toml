@@ -1,17 +1,20 @@
 [tool.poetry]
 name = "panchang"
-version = "0.0.dev0"
+version = "0.0.0"
 description = "A python package that follows traditional units of Hindu timekeeping."
-authors = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
-readme = "README.md"
-
-
-repository = "https://github.com/shankarlohar/panchang"
-
-
-keywords = ["panchang", "hindu time"]
-
 license = "MIT"
+authors = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
+maintainers = ["shankarlohar <inbox.shankarlohar@gmail.com>"]
+readme = "docs/README.md"
+repository = "https://github.com/shankarlohar/panchang"
+documentation = "https://shankarlohar.github.io/panchang"
+keywords = ["panchang", "hindu time"]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.10"    
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -21,6 +24,20 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 mkdocs-material = "^9.5.14"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "0.0.0"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+
 
 [build-system]
 requires = ["poetry-core"]
